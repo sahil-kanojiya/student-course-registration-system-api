@@ -1,5 +1,5 @@
 # Multi-stage build for Spring Boot application
-FROM eclipse-temurin:21-jdk-alpine AS builder
+FROM eclipse-temurin:24-jdk-alpine AS builder
 WORKDIR /workspace
 
 # Copy build files and resolve dependencies
@@ -12,7 +12,7 @@ COPY src src
 RUN ./mvnw clean package -DskipTests -B
 
 # Minimal JRE runtime
-FROM eclipse-temurin:21-jre-alpine
+FROM eclipse-temurin:24-jre-alpine
 WORKDIR /app
 COPY --from=builder /workspace/target/*.jar app.jar
 
