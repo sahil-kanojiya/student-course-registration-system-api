@@ -1,3 +1,7 @@
 /target/
 
 !.mvn/wrapper/maven-wrapper.properties
+
+.idea/
+*.iml
+target/
