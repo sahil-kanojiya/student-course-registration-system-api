@@ -1,4 +1,4 @@
-package com.example.StudentCourseRegistrationSystem.entity;
+package com.example.courseregistration.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

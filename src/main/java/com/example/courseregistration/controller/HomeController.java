@@ -1,10 +1,10 @@
-package com.example.StudentCourseRegistrationSystem.controller;
+package com.example.courseregistration.controller;
 
-import com.example.StudentCourseRegistrationSystem.dao.CourseDao;
-import com.example.StudentCourseRegistrationSystem.dao.StudentDao;
-import com.example.StudentCourseRegistrationSystem.dto.RegisterDto;
-import com.example.StudentCourseRegistrationSystem.entity.Course;
-import com.example.StudentCourseRegistrationSystem.entity.Student;
+import com.example.courseregistration.dao.CourseDao;
+import com.example.courseregistration.dao.StudentDao;
+import com.example.courseregistration.dto.RegisterDto;
+import com.example.courseregistration.entity.Course;
+import com.example.courseregistration.entity.Student;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

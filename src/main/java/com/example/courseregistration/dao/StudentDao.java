@@ -1,6 +1,6 @@
-package com.example.StudentCourseRegistrationSystem.dao;
+package com.example.courseregistration.dao;
 
-import com.example.StudentCourseRegistrationSystem.entity.Student;
+import com.example.courseregistration.entity.Student;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 

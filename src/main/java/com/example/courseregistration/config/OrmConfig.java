@@ -1,4 +1,4 @@
-package com.example.StudentCourseRegistrationSystem.config;
+package com.example.courseregistration.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -31,7 +31,7 @@ public class OrmConfig {
     public LocalContainerEntityManagerFactoryBean entityManagerFactory(DataSource dataSource) {
         LocalContainerEntityManagerFactoryBean entityManagerFactoryBean = new LocalContainerEntityManagerFactoryBean();
         entityManagerFactoryBean.setDataSource(dataSource);
-        entityManagerFactoryBean.setPackagesToScan("com.example.StudentCourseRegistrationSystem.entity");
+        entityManagerFactoryBean.setPackagesToScan("com.example.courseregistration.entity");
         entityManagerFactoryBean.setJpaVendorAdapter(new HibernateJpaVendorAdapter());
 
         Properties props = new Properties();
